@@ -1,4 +1,4 @@
-package com.hmall.config;
+package com.hmall.user.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -8,7 +8,7 @@ import java.time.Duration;
 
 @Data
 @ConfigurationProperties(prefix = "hm.jwt")
-public class   JwtProperties {
+public class JwtProperties {
     private Resource location;
     private String password;
     private String alias;
